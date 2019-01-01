@@ -10,11 +10,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -31,11 +31,11 @@ let allQuestions = [
     options: [
       {
         name: "এই রকম তিনটার বেশি ",
-        value: 5
+        value: 10
       },
       {
         name: "এই রকম দুইটা বা তিনটা ",
-        value: 10
+        value: 5
       },
       {
         name: "এই রকম একটা বা শূন্য  ",
@@ -51,11 +51,11 @@ let allQuestions = [
     options: [
       {
         name: "চারটার বেশি ",
-        value: 5
+        value: 10
       },
       {
         name: "দুই থেকে চার্ এর মধ্যে ",
-        value: 10
+        value: 5
       },
       {
         name: "এক বা তার কম ",
@@ -71,11 +71,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -91,11 +91,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -111,11 +111,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -131,11 +131,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -151,11 +151,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -171,11 +171,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -191,11 +191,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -211,11 +211,11 @@ let allQuestions = [
     options: [
       {
         name: "এক ঘন্টার কম",
-        value: 5
+        value: 10
       },
       {
         name: "এক থেকে তিন ঘন্টার কম ",
-        value: 10
+        value: 5
       },
       {
         name: "তিন ঘন্টার বেশি ",
@@ -237,11 +237,11 @@ function show() {
   let html = "";
   if (answered == 10) {
     html += `<h2 class="title mb-5">তোর ফলাফল :</h2>`;
-    if (battery > 0 && battery < 25) {
+    if (battery > 0 && battery <= 25) {
       html += `<h3 class="title mb-5">তোর অবস্থা পুরাই কেরোসিন </h3>`;
-    } else if (battery > 25 && battery < 50) {
+    } else if (battery > 25 && battery <= 50) {
       html += `<h3 class="title mb-5">তোর অবস্থা সাধারণ মানুষের মতো </h3>`;
-    } else if (battery > 50 && battery < 75) {
+    } else if (battery > 50 && battery <= 75) {
       html += `<h3 class="title mb-5">তুই ভালো লেভেলে আছোস </h3>`;
     } else if (battery > 75 && battery <= 100) {
       html += `<h3 class="title mb-5">তুই টপ পারফর্মার </h3>`;
