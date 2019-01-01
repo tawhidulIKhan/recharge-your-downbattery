@@ -65,7 +65,7 @@ let allQuestions = [
   },
   {
     id: 4,
-    q: "demo question?",
+    q: "demo question 1",
     score: null,
     marked: 0,
     options: [
@@ -85,27 +85,7 @@ let allQuestions = [
   },
   {
     id: 5,
-    q: "demo question?",
-    score: null,
-    marked: 0,
-    options: [
-      {
-        name: "এক ঘন্টার কম",
-        value: 10
-      },
-      {
-        name: "এক থেকে তিন ঘন্টার কম ",
-        value: 5
-      },
-      {
-        name: "তিন ঘন্টার বেশি ",
-        value: 0
-      }
-    ]
-  },
-  {
-    id: 5,
-    q: "demo question?",
+    q: "demo question2",
     score: null,
     marked: 0,
     options: [
@@ -125,7 +105,7 @@ let allQuestions = [
   },
   {
     id: 6,
-    q: "demo question?",
+    q: "demo question3",
     score: null,
     marked: 0,
     options: [
@@ -145,7 +125,7 @@ let allQuestions = [
   },
   {
     id: 7,
-    q: "demo question?",
+    q: "demo question4",
     score: null,
     marked: 0,
     options: [
@@ -165,7 +145,7 @@ let allQuestions = [
   },
   {
     id: 8,
-    q: "demo question?",
+    q: "demo question5",
     score: null,
     marked: 0,
     options: [
@@ -185,7 +165,7 @@ let allQuestions = [
   },
   {
     id: 9,
-    q: "demo question?",
+    q: "demo question6",
     score: null,
     marked: 0,
     options: [
@@ -205,7 +185,7 @@ let allQuestions = [
   },
   {
     id: 10,
-    q: "demo question?",
+    q: "demo question7",
     score: null,
     marked: 0,
     options: [
@@ -249,10 +229,12 @@ function show() {
   } else if (questions) {
     let counter = 0;
 
-    for (let i = 0; i < questions.length; i++) {
+    for (let i = 1; i <= questions.length; i++) {
       if (counter > 0) break;
       if (questions[i].marked == 0) {
         //if ((counter = 0)) {
+        html += `<h5 class="title mb-5">${questions.length} / ${i}</h5>`;
+
         html += `<h2 class="title mb-5">${questions[i].q}</h2>`;
 
         // Radio options start  -----
