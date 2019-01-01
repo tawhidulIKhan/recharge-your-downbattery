@@ -1,0 +1,23 @@
+@import url("https://fonts.maateen.me/solaiman-lipi/font.css");body{font-family:"SolaimanLipi",sans-serif}
+.battery{height:500px;width:150px;background:#ddd;position:relative;border:10px solid #000}
+.battery:before{content:"";width:50px;height:17px;background:#000;position:absolute;top:-21px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+.battery .unit{width:100%;background:green;position:absolute;bottom:0;-webkit-transition:.5s all;transition:.5s all}
+.battery .unit .percent{width:133%;height:5px;background-color:#111;position:absolute;top:0}
+.battery .unit .percent span{position:absolute;right:-21px;background:#ddd;width:40px;text-align:center;height:40px;line-height:40px;border-radius:40px;top:-14px}
+.intro{-webkit-transition:.5s all;transition:.5s all}
+.intro .btn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;border-radius:50px;border:3px solid #ddd;padding:1px 0 2px 29px;overflow:hidden;position:relative}
+.intro .btn.btn-submit{border:0 solid;padding:0}
+.intro .btn.btn-submit:hover{background-color:transparent}
+.intro .btn.btn-submit:hover:before{content:"";background-color:transparent}
+.intro .btn:hover{color:#fff}
+.intro .btn:hover:before{content:"";position:absolute;background-color:green;left:0;width:100%;-webkit-transition:.5s all;transition:.5s all;height:100%}
+.intro .btn:before{content:"";position:absolute;background-color:green;left:0;width:0;height:100%;-webkit-transition:.5s all;transition:.5s all;z-index:-1}
+.intro .btn img{width:50px;height:50px;border-radius:0;margin-right:4px}
+.inputGroup{background-color:#fff;display:block;margin:10px 0;position:relative}
+.inputGroup label{background-color:#ddd;padding:12px 30px;width:100%;display:block;text-align:left;color:#3c454c;cursor:pointer;position:relative;z-index:2;-webkit-transition:color 200ms ease-in;transition:color 200ms ease-in;overflow:hidden}
+.inputGroup label:before{width:100%;height:10px;border-radius:50%;content:"";background-color:green;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%) scale3d(1,1,1);transform:translate(-50%,-50%) scale3d(1,1,1);-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);opacity:0;z-index:-1}
+.inputGroup label:after{width:32px;height:32px;content:"";border:2px solid #d1d7dc;background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");background-repeat:no-repeat;background-position:2px 3px;border-radius:50%;z-index:2;position:absolute;right:30px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);cursor:pointer;-webkit-transition:all 200ms ease-in;transition:all 200ms ease-in}
+.inputGroup input:checked ~ label{color:#fff}
+.inputGroup input:checked ~ label:before{-webkit-transform:translate(-50%,-50%) scale3d(56,56,1);transform:translate(-50%,-50%) scale3d(56,56,1);opacity:1}
+.inputGroup input:checked ~ label:after{background-color:#54e0c7;border-color:#54e0c7}
+.inputGroup input{width:32px;height:32px;-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;z-index:2;position:absolute;right:30px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);cursor:pointer;visibility:hidden}
