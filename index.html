@@ -9,28 +9,46 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container mt-4">
-      <div class="row">
+    <div class="container h-sc">
+      <div class="row position-relative h-sc">
         <div
-          class="col-8 text-center d-flex align-items-center position-relative justify-content-center"
+          class="col-lg-8 col-md-12 col-12 m-auto text-center d-flex align-items-center position-relative justify-content-center"
         >
-          <div class="wrapper"><div id="content"></div></div>
+          <div class="wrapper w-100"><div id="content"></div></div>
         </div>
-        <div class="col-4 d-flex justify-content-center">
-          <div class="battery">
-            <div class="unit" data-unit="0">
-              <div class="percent"><span></span></div>
-            </div>
+
+        <div class="battery">
+          <div class="unit" data-unit="0">
+            <div class="percent"><span></span></div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="d-flex bg-dark fixed-bottom py-3 mt-4">
+
+    <!-- <footer class="d-flex bg-dark fixed-bottom py-3 mt-4">
       <div class="col d-flex align-items-center">
         <h4 class="text-white mr-3">আগের মাপা চার্জের হিসেবে মুছতে</h4>
         <button class="btn btn-danger" id="clearAll">Clear</button>
       </div>
-    </footer>
+    </footer> -->
+
+    <div id="about">
+      <p>
+        দিনে কয়বার মোবাইলের চার্জ চেক করো? চার্জের লাল বাত্তি জ্বলার আগেই
+        লাফাইতে লাফাইতে চার্জার নিয়ে বসে পড়ো! অথচ কখনো কি চেক করেছো তোমার লাইফের
+        চার্জ কতটুকু আছে? যারা লাইফের চার্জ কতটুকু আছে চেক করতে চায়। দরকার হলে
+        নিজেকে রিচার্জ করে নিতে চায়। মরা ইঞ্জিন নিয়েও কেরামতি দেখাতে চায়।
+        বন্ধুত্বের ভাইরাস, ছুতার জং, ভালো না লাগার রোগ সেরে ফেলতে চায়। তাদের
+        জন্য এই বই। যাতে তারা সময়মতো কনফিডেন্সের বড়ি গিলতে পারে, কোপা শামসু
+        স্টাইলে ফাইট দিয়ে জীবন ঝাক্কাস বানাতে পারে।
+      </p>
+      <button id="aboutClose" class="btn-danger btn">X</button>
+    </div>
+
+    <div id="sidebar">
+      <button class="btn btn-danger" id="clearAll">নতুন ভাবে মাপবো</button>
+    </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/helpers.js"></script>
