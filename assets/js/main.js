@@ -137,7 +137,7 @@ let allQuestions = [
         value: 5
       },
       {
-        name: "তালো না ",
+        name: "ভালো না ",
         value: 0
       }
     ]
@@ -364,6 +364,9 @@ function showQuestions(questions) {
     if (counter > 0) break;
     if (questions[i].marked == 0) {
       html += `<div class="question-box shadow">`;
+      html += `<span class="bg-primary text-white d-inline-block px-3 mb-5 mt-2">${
+        questions.length
+      } / ${i + 1}</span>`;
       html += `<h2 class="title mb-5">${questions[i].q}</h2>`;
 
       // Radio options start  -----
@@ -383,10 +386,13 @@ function showQuestions(questions) {
       html += `<input type="hidden" data-id="${
         questions[i].id
       }" id="unitResult">`;
-      html += `<div class="d-flex justify-content-between align-items-center"><button class="btn btn-submit" id="submit" disabled><img src="assets/img/tick.png"></button>`;
-      html += `<span class="badge badge-primary px-3">${
-        questions.length
-      } / ${i + 1}</span></div>`;
+      html += `<div class="d-flex justify-content-end align-items-center mt-4">
+      <button class="btn btn-submit btn-primary" id="submit" disabled>
+      সাবমিট 
+
+      </button>`;
+      html += `
+      </div>`;
 
       html += `</div>`;
 

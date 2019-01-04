@@ -35,6 +35,9 @@
 .question-box{padding:20px}
 .question-box .title{font-size:26px;line-height:1.7}
 .badge-primary{background:#005e55}
+.bg-primary{background-color:#005e55 !important}
+.btn-primary{background:#005e55;border:0;border-radius:0}
+.btn-primary.disabled,.btn-primary:disabled{background-color:#005e55}
 @media screen and (max-width:991px){.battery{height:300px;width:50px;background:#ddd;position:absolute;right:0;border:5px solid #000;top:0;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:rotate(90deg);margin:auto;left:0}
 .battery:before{width:30px}
 .intro{margin-top:250px}
