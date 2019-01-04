@@ -289,12 +289,12 @@ function goodCondition() {
 
   html += `<div class="row align-items-center shadow p-5">
   <div class="col-md-4 col-lg-4 col-sm-12 col-12 mb-lg-0 mb-md-0 mb-5">
-    <img src="assets/img/average.jpg" width="200" height="200">
+    <img src="assets/img/happy.jpeg" width="200" height="200">
   </div>
 
   <div class="col-md-8 col-lg-8 col-sm-12 col-12">
     <div class="content pl-0 pl-md-5 pl-lg-5">
-      <h3 class="title mb-5 bg-info p-2">তুই ভালো লেভেলে আছোস </h3>
+      <h3 class="title mb-5 bg-info text-white p-2">তুই ভালো লেভেলে আছোস </h3>
       <h5>  যেকোনো একটা জিনিসে তুই ভালো করার চেষ্টা করতেছস ।  সেটা ভালোভাবে চালিয়ে জিতে থাকে ।  তোর অনেক পোটেনশিয়ালিটি  আছে ।  সেগুলো কাজে লাগা , আরো অনেক ভালো করতে পারবি । </h5>
   </div>
  </div>
