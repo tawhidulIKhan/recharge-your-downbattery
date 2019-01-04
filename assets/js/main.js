@@ -536,6 +536,7 @@ if (whatisthis) {
   whatisthis.addEventListener("click", about);
   function about() {
     aboutEl.style.top = 0;
+    aboutEl.style.transform = "scale(1)";
   }
 }
 
@@ -544,7 +545,7 @@ if (whatisthis) {
 if (aboutCloseBtn) {
   aboutCloseBtn.addEventListener("click", aboutClose);
   function aboutClose() {
-    aboutEl.style.top = -200 + "%";
+    aboutEl.style.transform = "scale(0)";
   }
 }
 
